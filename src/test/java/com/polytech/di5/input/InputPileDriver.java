@@ -1,7 +1,6 @@
 package com.polytech.di5.input;
 
 import com.polytech.di5.model.Pile;
-import com.polytech.di5.view.Observer;
 import com.polytech.di5.view.ViewBottomPileStub;
 import com.polytech.di5.view.ViewTopPileStub;
 

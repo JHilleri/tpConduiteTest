@@ -12,9 +12,13 @@ import com.polytech.di5.view.ViewTopPileStub;
 
 public class PileInputTest
 {
+    public Pile getNewPile(){
+        return new PileStub();
+    }
+
     @Test
     public void test1(){
-        Pile pile = new PileStub();
+        Pile pile = getNewPile();
         InputPileDriver driver = new InputPileDriver(pile);
         ViewBottomPileStub bottomView = new ViewBottomPileStub(pile);
         ViewTopPileStub topView = new ViewTopPileStub(pile);
@@ -27,7 +31,7 @@ public class PileInputTest
 
     @Test
     public void test2(){
-        Pile pile = new PileStub();
+        Pile pile = getNewPile();
         InputPileDriver driver = new InputPileDriver(pile);
         ViewBottomPileStub bottomView = new ViewBottomPileStub(pile);
         ViewTopPileStub topView = new ViewTopPileStub(pile);
@@ -40,7 +44,7 @@ public class PileInputTest
 
     @Test
     public void test2_2(){
-        Pile pile = new PileStub();
+        Pile pile = getNewPile();
         InputPileDriver driver = new InputPileDriver(pile);
         ViewBottomPileStub bottomView = new ViewBottomPileStub(pile);
         ViewTopPileStub topView = new ViewTopPileStub(pile);
@@ -60,7 +64,7 @@ public class PileInputTest
 
     @Test
     public void test3(){
-        Pile pile = new PileStub();
+        Pile pile = getNewPile();
         InputPileDriver driver = new InputPileDriver(pile);
         ViewBottomPileStub bottomView = new ViewBottomPileStub(pile);
         ViewTopPileStub topView = new ViewTopPileStub(pile);
