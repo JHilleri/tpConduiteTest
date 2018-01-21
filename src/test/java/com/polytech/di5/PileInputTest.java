@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import com.polytech.di5.input.InputPileDriver;
 import com.polytech.di5.model.Pile;
+import com.polytech.di5.model.PileImpl;
 import com.polytech.di5.model.PileStub;
 import com.polytech.di5.view.ViewBottomPileStub;
 import com.polytech.di5.view.ViewTopPileStub;
@@ -13,7 +14,7 @@ import com.polytech.di5.view.ViewTopPileStub;
 public class PileInputTest
 {
     public Pile getNewPile(){
-        return new PileStub();
+        return new PileImpl();
     }
 
     @Test
